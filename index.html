@@ -2,26 +2,64 @@
 <html>
 <head>
   <title>Mufeed VH</title>
-  <meta name="description" content="i love computers :)" />
+  <meta name = "keywords" content = "Mufeed VH , Tech Geek" />
+  <meta name="description" content="Mufeed VH | i love computers :)" />
+  <meta name = "author" content = "Mufeed VH" />
   <!-- linkings -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
 </head>
-<body>
 <!-- css -->
 <style type="text/css">
-body {
-  background-color: lightgray;
+
 }
 .body {
   margin: 0 auto;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  
+}
+.title {
+  position: relative;
+  color: #262626;
+  padding: 20px 50px;
+}
+ 
+.title:before {
+  background: #262626;
+  color: white;
+  content: 'MUFEED VH';
+  overflow: hidden;
+  position: absolute;  
+  top: 0;  
+  left: 0;
+  padding: 20px 50px;
+    -webkit-clip-path: polygon(0% 0% , 30% 0%, 30% 100%, 0% 100%);  
+  clip-path: polygon(0% 0% , 30% 0%, 30% 100%, 0% 100%);
+  animation: slide 4s 1s linear infinite; 
+} 
+           
+@keyframes slide {      
+  50% {     
+    -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%); 
+  } 
+}  
+
+/* Unnecessary code */ 
+body {
+  font-family: sans-serif;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  font-size: 50px; 
 }
 </style>
 <!-- body -->
-  <div class="body">
-    <h1>Mufeed VH</h1>
-    <p>i love computers :)</p>
-  </div>
+  
+<body>
+
+    <div class="title">MUFEED VH</div>
+    <h3>i love computers :)</h3>
 </body>
+
 </html>
